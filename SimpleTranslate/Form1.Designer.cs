@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SimpleTranslate
 {
@@ -40,10 +40,10 @@ namespace SimpleTranslate
             this.button2 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -53,10 +53,11 @@ namespace SimpleTranslate
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(244, 384);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.MaxLength = 0;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -75,7 +76,7 @@ namespace SimpleTranslate
             // 
             // listBox1
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
@@ -138,7 +139,7 @@ namespace SimpleTranslate
             // 
             // textBox4
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(9, 303);
             this.textBox4.Name = "textBox4";
@@ -148,8 +149,8 @@ namespace SimpleTranslate
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.splitContainer1);
             this.groupBox1.Controls.Add(this.textBox4);
@@ -161,47 +162,10 @@ namespace SimpleTranslate
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "翻訳";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 15);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "翻訳した文章";
-            // 
-            // textBox3
-            // 
-            this.textBox3.AcceptsReturn = true;
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(3, 21);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox3.Size = new System.Drawing.Size(551, 230);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
-            // 
-            // textBox2
-            // 
-            this.textBox2.AcceptsReturn = true;
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(3, 21);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox2.Size = new System.Drawing.Size(510, 230);
-            this.textBox2.TabIndex = 0;
-            // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.Location = new System.Drawing.Point(9, 19);
             this.splitContainer1.Name = "splitContainer1";
@@ -218,6 +182,44 @@ namespace SimpleTranslate
             this.splitContainer1.Size = new System.Drawing.Size(1077, 254);
             this.splitContainer1.SplitterDistance = 516;
             this.splitContainer1.TabIndex = 8;
+            // 
+            // textBox2
+            // 
+            this.textBox2.AcceptsReturn = true;
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Location = new System.Drawing.Point(3, 21);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox2.Size = new System.Drawing.Size(510, 230);
+            this.textBox2.TabIndex = 0;
+            // 
+            // textBox3
+            // 
+            this.textBox3.AcceptsReturn = true;
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Location = new System.Drawing.Point(3, 21);
+            this.textBox3.MaxLength = 0;
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox3.Size = new System.Drawing.Size(551, 230);
+            this.textBox3.TabIndex = 1;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "翻訳した文章";
             // 
             // Form1
             // 
